@@ -1,0 +1,56 @@
+$primary-color: #333;
+$background-color: #f9f9f9;
+$banner-bg: #fffae6;
+$banner-text: #333;
+$nav-bg: #fff;
+$nav-link: #333;
+$nav-link-hover: #007bff;
+$nav-link-active: #007bff;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+}
+
+.banner {
+  background-color: $banner-bg;
+  color: $banner-text;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $nav-bg;
+  border-bottom: 1px solid lighten($nav-bg, 10%);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  li {
+    a {
+      color: $nav-link;
+      text-decoration: none;
+      padding: 0.5rem;
+      &.active {
+        color: $nav-link-active;
+        font-weight: bold;
+        border-bottom: 2px solid $nav-link-active;
+      }
+      &:hover {
+        color: $nav-link-hover;
+      }
+    }
+  }
+}
+
+main {
+  padding: 4rem 1rem 1rem;
+}
