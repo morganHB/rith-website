@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.banner {
+  background: #f2b309;
+  color: #333;
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #004d80;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+nav ul li a:hover {
+  color: #f2b309;
+}
+
+nav ul li a.active {
+  color: #f2b309;
+  border-bottom: 2px solid #f2b309;
+}
+
+main {
+  padding: 6rem 1rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(to right, #1a5f8d, #337199);
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #004d80;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #004d80;
+}
+
+.card ul {
+  padding-left: 1.1rem;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.value {
+  flex: 1 1 200px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.value h3 {
+  margin-top: 0;
+  color: #004d80;
+}
+
+.value p {
+  margin-bottom: 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  margin: 0.5rem 0 0.2rem;
+  color: #004d80;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.8rem;
+  color: #333;
+}
